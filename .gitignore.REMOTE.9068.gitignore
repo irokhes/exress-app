@@ -1,5 +1,4 @@
 lib-cov
-lcov.info
 *.seed
 *.log
 *.csv
@@ -11,8 +10,6 @@ lcov.info
 pids
 logs
 results
-build
-.grunt
 
 npm-debug.log
 node_modules
