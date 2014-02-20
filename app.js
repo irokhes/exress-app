@@ -21,6 +21,15 @@ app.use(express.static('./downloads'));
 
 app.use(app.router);
 
+app.use(function(req, res){
+	res.status(400);
+	res.render('404.jade',
+	{
+		title: '404',
+		message: 'File not found'
+	});
+});
+
 // Add the responseTime middleware
 app.use(express.responseTime());
 
